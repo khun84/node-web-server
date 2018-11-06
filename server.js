@@ -21,9 +21,11 @@ app.use((req, res, next) => {
 
   next(); // have to call this so the req will be forwarded to the next middleware, otherwise req stucked here
 });
-app.use((req, res, next) => {
-  res.render('maintenance.hbs');
-});
+
+// commenting this so that user can browse the site
+// app.use((req, res, next) => {
+//   res.render('maintenance.hbs');
+// });
 app.use(express.static(__dirname + '/public'));
 
 hbs.registerHelper('getCurrentYear', () => {
