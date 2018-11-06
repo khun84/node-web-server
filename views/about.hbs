@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8">
-    <title>Some website</title>
-</head>
-<body>
-<h1>{{pageTitle}}</h1>
-<p>{{welcomeMessage}}</p>
+    <head>
+        <meta charset="UTF-8">
+        <title>Some website</title>
+    </head>
+    <body>
+        {{> header}}
+        <p>{{welcomeMessage}}</p>
 
-<footer>
-    <p>Copyright {{currentYear}}</p>
-</footer>
-</body>
+        {{> footer}}
+    </body>
 </html>
